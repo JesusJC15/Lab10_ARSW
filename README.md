@@ -42,9 +42,15 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 ![](images/part3/part3-deploy-function-2.png)
 
+![](images/lab/7.png)
+
 4. Dirijase al portal de Azure y pruebe la function.
 
 ![](images/part3/part3-test-function.png)
+
+![](images/lab/8.png)
+
+![](images/lab/9.png)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
