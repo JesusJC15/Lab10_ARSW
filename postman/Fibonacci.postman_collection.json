@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "fibonacci-collection",
+    "name": "Fibonacci",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Fibonacci",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nth\": 20\n}"
+        },
+        "url": {
+          "raw": "https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci",
+          "protocol": "https",
+          "host": [
+            "functionprojectfibonacci-fhf9czb7cxh8hxcc",
+            "westus-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "Fibonacci"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

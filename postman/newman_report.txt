@@ -1,0 +1,82 @@
+Informe de ejecución - Newman
+Fecha: 2025-11-23
+Comando ejecutado:
+newman run Fibonacci.postman_collection.json -n 10
+
+Resumen general:
+- Colección: Fibonacci
+- Iteraciones ejecutadas: 10
+- Peticiones ejecutadas: 10
+- Fallos: 0
+- Duración total de la ejecución: 2.5s
+- Datos totales recibidos (según Newman): 40B (aprox)
+- Tiempo medio de respuesta: 177ms
+- Tiempo mínimo: 116ms
+- Tiempo máximo: 725ms
+- Desviación estándar: 182ms
+
+Detalle por iteración:
+1) Iteration 1/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 725ms
+
+2) Iteration 2/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 116ms
+
+3) Iteration 3/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 116ms
+
+4) Iteration 4/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 116ms
+
+5) Iteration 5/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 116ms
+
+6) Iteration 6/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 117ms
+
+7) Iteration 7/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 117ms
+
+8) Iteration 8/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 117ms
+
+9) Iteration 9/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 120ms
+
+10) Iteration 10/10
+   - Request: POST https://functionprojectfibonacci-fhf9czb7cxh8hxcc.westus-01.azurewebsites.net/api/Fibonacci
+   - Status: 200 OK
+   - Tamaño respuesta: 214B
+   - Tiempo de respuesta: 116ms
+
+Observaciones:
+- Todas las peticiones respondieron con 200 OK y no hubo fallos en los tests.
+- La primera iteración tuvo un tiempo de respuesta significativamente mayor (725ms), probablemente por un cold start de la Function App; las demás iteraciones presentan tiempos consistentes (~116-120ms).
+- Si se desea medir rendimiento en caliente, se recomienda descartar la primera iteración o ejecutar un warm-up previo.
